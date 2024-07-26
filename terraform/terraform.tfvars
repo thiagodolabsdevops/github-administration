@@ -113,7 +113,7 @@ repositories = [
   {
     name = "labsdevops.com.br"
     pages = {
-      branch = "gh-pages"
+      branch = "master"
       path   = "/"
     }
   },
