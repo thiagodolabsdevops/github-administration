@@ -111,13 +111,6 @@ repositories = [
     name = "pure-bash-bible"
   },
   {
-    name = "labsdevops.com.br"
-    pages = {
-      branch = "master"
-      path   = "/"
-    }
-  },
-  {
     name = "desafios"
   },
   {
@@ -155,23 +148,23 @@ teams = [
   # }
 ]
 
-environments = {
-  development = {
-    repositories = []
-    secrets = {
-      SECRET_KEY = "dev_secret_value"
-    }
-  },
-  staging = {
-    repositories = []
-    secrets = {
-      SECRET_KEY = "stg_secret_value"
-    }
-  },
-  production = {
-    repositories = []
-    secrets = {
-      SECRET_KEY = "prod_secret_value"
-    }
-  }
-}
+# environments = {
+#   development = {
+#     repositories = []
+#     secrets = {
+#       SECRET_KEY = "dev_secret_value"
+#     }
+#   },
+#   staging = {
+#     repositories = []
+#     secrets = {
+#       SECRET_KEY = "stg_secret_value"
+#     }
+#   },
+#   production = {
+#     repositories = []
+#     secrets = {
+#       SECRET_KEY = "prod_secret_value"
+#     }
+#   }
+# }
