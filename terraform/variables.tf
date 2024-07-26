@@ -1,13 +1,3 @@
-variable "github_token" {
-  type        = string
-  description = "GitHub token with repo and admin:org permissions"
-}
-
-# variable "github_organization" {
-#   type        = string
-#   description = "The GitHub organization name"
-# }
-
 variable "repositories" {
   type = list(object({
     name        = string

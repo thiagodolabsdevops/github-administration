@@ -11,8 +11,7 @@ jobs:
   terraform:
     runs-on: ubuntu-latest
     env:
-      TF_VAR_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      # TF_VAR_GITHUB_ORGANIZATION: ${{ secrets.GITHUB_ORGANIZATION }}
+      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     steps:
       - name: Checkout
         uses: actions/checkout@v2
