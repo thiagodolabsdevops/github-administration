@@ -38,10 +38,10 @@ variable "teams" {
   description = "List of GitHub teams to create"
 }
 
-variable "environments" {
-  type = map(object({
-    repositories = list(string)
-    secrets      = map(string)
-  }))
-  description = "Map of environments and their corresponding repositories and secrets"
-}
+# variable "environments" {
+#   type = map(object({
+#     repositories = list(string)
+#     secrets      = map(string)
+#   }))
+#   description = "Map of environments and their corresponding repositories and secrets"
+# }
