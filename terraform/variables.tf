@@ -39,13 +39,3 @@ variable "teams" {
   }))
   description = "List of GitHub teams to create"
 }
-
-variable "secrets" {
-  type        = map(string)
-  description = "Map of secrets to be applied to all repositories"
-  default = {
-    AWS_ACCESS_KEY_ID     = "blablabla"
-    AWS_REGION            = "us-east-1"
-    AWS_SECRET_ACCESS_KEY = "blablabla"
-  }
-}

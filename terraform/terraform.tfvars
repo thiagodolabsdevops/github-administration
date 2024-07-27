@@ -18,6 +18,9 @@ repositories = [
     name         = "kathuann-demo3"
     description  = "This is the Kathuann Demo3 repository"
     homepage_url = "https://kathuann.com/demo3"
+    secrets = {
+      APP_NAME     = "kathuann-demo3"
+    }
   },
   {
     name = "jenkins-api"
