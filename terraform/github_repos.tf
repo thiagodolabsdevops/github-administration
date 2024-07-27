@@ -28,10 +28,9 @@ resource "github_repository" "repos" {
   #   }
   # }
 
-  # auto_init        = each.value.auto_init
+  auto_init        = each.value.auto_init
   # license_template = each.value.license_template
 }
 
 # TODO: Implement feature to create repositories based on existent repository templates
 # TODO: Implement feature to create repositories that servers GitHub Pages
-# TODO: Implement feature to create auto-initialized repositories with a README

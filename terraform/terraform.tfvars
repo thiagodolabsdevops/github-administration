@@ -12,7 +12,7 @@ repositories = [
       has_downloads = true
   },
   {
-    name = "kathuann-demo"
+    name = "kathuann-demo2"
   },
   {
     name = "jenkins-api"
