@@ -1,6 +1,11 @@
 repositories = [
   {
     name = "WeatherForecast"
+    secrets = {
+      AWS_ACCESS_KEY_ID     = "your_access_key_id"
+      AWS_SECRET_ACCESS_KEY = "your_secret_access_key"
+      AWS_REGION            = "us-east-1"
+    }
   },
   {
     name = "spring-boot-newrelic"
@@ -148,23 +153,7 @@ teams = [
   # }
 ]
 
-# environments = {
-#   development = {
-#     repositories = []
-#     secrets = {
-#       SECRET_KEY = "dev_secret_value"
-#     }
-#   },
-#   staging = {
-#     repositories = []
-#     secrets = {
-#       SECRET_KEY = "stg_secret_value"
-#     }
-#   },
-#   production = {
-#     repositories = []
-#     secrets = {
-#       SECRET_KEY = "prod_secret_value"
-#     }
-#   }
-# }
+
+secrets = {
+  SECRET_KEY = "secret_value"
+}

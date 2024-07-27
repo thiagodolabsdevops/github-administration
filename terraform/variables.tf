@@ -22,6 +22,8 @@ variable "repositories" {
       path   = string
     }), null)
 
+    secrets = optional(map(string))
+
     # auto_init        = optional(bool, true)        # Initialize repositories with a README
     # license_template = optional(string, "gpl-3.0") # License template to apply to all repositories
   }))
@@ -38,10 +40,12 @@ variable "teams" {
   description = "List of GitHub teams to create"
 }
 
-# variable "environments" {
-#   type = map(object({
-#     repositories = list(string)
-#     secrets      = map(string)
-#   }))
-#   description = "Map of environments and their corresponding repositories and secrets"
-# }
+variable "secrets" {
+  type        = map(string)
+  description = "Map of secrets to be applied to all repositories"
+  default = {
+    AWS_ACCESS_KEY_ID     = "blablabla"
+    AWS_REGION            = "us-east-1"
+    AWS_SECRET_ACCESS_KEY = "blablabla"
+  }
+}
