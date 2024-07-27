@@ -9,6 +9,10 @@ repositories = [
   },
   {
     name = "spring-boot-newrelic"
+      has_downloads = true
+  },
+  {
+    name = "kathuann-demo"
   },
   {
     name = "jenkins-api"

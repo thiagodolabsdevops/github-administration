@@ -18,15 +18,20 @@ resource "github_repository" "repos" {
   allow_squash_merge = each.value.allow_squash_merge
   allow_merge_commit = each.value.allow_merge_commit
 
-  dynamic "pages" {
-    for_each = each.value.pages != null ? [each.value.pages] : []
-    content {
-      source {
-        branch = pages.value.branch
-        path   = pages.value.path
-      }
-    }
-  }
+  # dynamic "pages" {
+  #   for_each = each.value.pages != null ? [each.value.pages] : []
+  #   content {
+  #     source {
+  #       branch = pages.value.branch
+  #       path   = pages.value.path
+  #     }
+  #   }
+  # }
+
   # auto_init        = each.value.auto_init
   # license_template = each.value.license_template
 }
+
+# TODO: Implement feature to create repositories based on existent repository templates
+# TODO: Implement feature to create repositories that servers GitHub Pages
+# TODO: Implement feature to create auto-initialized repositories with a README

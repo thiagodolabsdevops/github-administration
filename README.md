@@ -15,3 +15,8 @@ Add the PAT to Repository Secrets:
     2. Click on "Settings" and then "Secrets and variables" in the left sidebar.
     3. Click on "Actions" and then "New repository secret."
     4. Name the secret `GH_TOKEN` (or any name you prefer) and paste the PAT you created.
+
+## TODO
+
+- Write secrets to Secrets Manager
+- Secure secrets using SOPS

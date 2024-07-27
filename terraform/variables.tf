@@ -17,10 +17,10 @@ variable "repositories" {
     allow_squash_merge = optional(bool, true)
     allow_merge_commit = optional(bool, true)
 
-    pages = optional(object({
-      branch = string
-      path   = string
-    }), null)
+    # pages = optional(object({
+    #   branch = string
+    #   path   = string
+    # }), null)
 
     secrets = optional(map(string))
 
