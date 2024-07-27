@@ -24,7 +24,7 @@ variable "repositories" {
 
     secrets = optional(map(string))
 
-    auto_init        = optional(bool, true)
+    auto_init = optional(bool, true)
     # license_template = optional(string, "gpl-3.0") # License template to apply to all repositories
   }))
   description = "List of GitHub repositories to create"

@@ -18,5 +18,8 @@ Add the PAT to Repository Secrets:
 
 ## TODO
 
-- Write secrets to Secrets Manager
-- Secure secrets using SOPS
+- Implement SOPS to secure secrets
+- Implement secrets retrieval from AWS Secrets Manager
+- Implement feature to create repositories based on existent repository templates
+- Implement feature to create repositories that servers GitHub Pages
+- Implement feature to associate teams to specific repositories

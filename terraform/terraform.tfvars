@@ -8,11 +8,16 @@ repositories = [
     }
   },
   {
-    name = "spring-boot-newrelic"
-      has_downloads = true
+    name          = "spring-boot-newrelic"
+    has_downloads = true
   },
   {
     name = "kathuann-demo2"
+  },
+  {
+    name         = "kathuann-demo3"
+    description  = "This is the Kathuann Demo3 repository"
+    homepage_url = "https://kathuann.com/demo3"
   },
   {
     name = "jenkins-api"

@@ -18,6 +18,8 @@ resource "github_repository" "repos" {
   allow_squash_merge = each.value.allow_squash_merge
   allow_merge_commit = each.value.allow_merge_commit
 
+  auto_init = each.value.auto_init
+
   # dynamic "pages" {
   #   for_each = each.value.pages != null ? [each.value.pages] : []
   #   content {
@@ -27,10 +29,4 @@ resource "github_repository" "repos" {
   #     }
   #   }
   # }
-
-  auto_init        = each.value.auto_init
-  # license_template = each.value.license_template
 }
-
-# TODO: Implement feature to create repositories based on existent repository templates
-# TODO: Implement feature to create repositories that servers GitHub Pages

@@ -1,7 +1,7 @@
 locals {
   flattened_secrets = flatten([
     for repo in var.repositories : [
-      for secret_key, secret_value in (repo.secrets != null ? repo.secrets : {}) : {
+      for secret_key, secret_value in(repo.secrets != null ? repo.secrets : {}) : {
         repository      = repo.name
         secret_name     = secret_key
         plaintext_value = secret_value
