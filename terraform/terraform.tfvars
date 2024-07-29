@@ -63,8 +63,8 @@ repositories = [
     name = "kathuann-demo2"
   },
   {
-    name = "kathuann-demo3"
-    description = "This is the Kathuann Demo3 repository"
+    name         = "kathuann-demo3"
+    description  = "This is the Kathuann Demo3 repository"
     homepage_url = "https://kathuann.com/demo3"
     secrets = {
       APP_NAME = "kathuann-demo3"
@@ -125,7 +125,7 @@ repositories = [
     name = "simpleapp-python"
   },
   {
-    name = "spring-boot-newrelic"
+    name          = "spring-boot-newrelic"
     has_downloads = true
   },
   {
@@ -138,11 +138,11 @@ repositories = [
     name = "telefonica-vivo-brasil-demo2"
   },
   {
-    name = "terraform-helm"
+    name      = "terraform-helm"
     auto_init = false
   },
   {
-    name = "up-and-running-jenkins"
+    name        = "up-and-running-jenkins"
     description = "Reference code for the blog / video tutorial of Up and Running with Lacework and Jenkins"
   },
   {
