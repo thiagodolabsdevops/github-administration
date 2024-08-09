@@ -83,7 +83,7 @@ repositories = [
     name = "lwps"
   },
   {
-    name = "marublaize"
+    name = "thiagodolabsdevops"
   },
   {
     name = "microk8s-aws"
