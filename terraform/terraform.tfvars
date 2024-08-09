@@ -74,7 +74,7 @@ repositories = [
     name = "labs-devops-challenges"
   },
   {
-    name = "linux-tips-and-tricks"
+    name = "awesome-sysadmin"
   },
   {
     name = "lw-go-scripts"
