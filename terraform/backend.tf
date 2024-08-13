@@ -1,4 +1,3 @@
-
 terraform {
   backend "s3" {
     bucket         = "labsdevops-terraform-state-bucket"
@@ -7,4 +6,9 @@ terraform {
     dynamodb_table = "terraform-state-lock"
     encrypt        = true
   }
+
+  #  backend "gcs" {
+  #    bucket = "test"
+  #    prefix = "terraform/state"
+  #  }
 }
